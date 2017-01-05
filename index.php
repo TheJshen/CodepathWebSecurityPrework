@@ -12,9 +12,14 @@
         <br><br>
         Tip percentage:
         <br><br>
-        <input type="radio" name="tipPercent" value="10" checked>  10%
-        <input type="radio" name="tipPercent" value="15"> 15%
-        <input type="radio" name="tipPercent" value="20"> 20%
+        <?php
+        for ( $i = 10; $i <= 20; $i += 5) {
+        ?>
+             <input type="radio" name="tipPercent<?php echo $i; ?>" value="<?php echo $i; ?>" <?php echo ($i==10)?'checked':''?> > <?php echo $i; ?>% 
+        <?php
+            #echo "The number is: $i<br>";
+        }
+        ?>
         <br><br>
         <input type="submit" value="Submit">
         <br><br>
