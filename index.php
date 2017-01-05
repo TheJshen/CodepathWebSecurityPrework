@@ -6,23 +6,35 @@
 </head>
 <body>
     <h1>Tip Calculator</h1>
-    <form action="calculateTip.php"   >
+    <form action="index.php"   >
         Bill subtotal: $
-        <input type="text" name="Subtotal" value="0.00">
+        <input type="text" name="subtotal" value="0.00">
         <br><br>
         Tip percentage:
         <br><br>
         <?php
         for ( $i = 10; $i <= 20; $i += 5) {
         ?>
-             <input type="radio" name="tipPercent<?php echo $i; ?>" value="<?php echo $i; ?>" <?php echo ($i==10)?'checked':''?> > <?php echo $i; ?>% 
+             <input type="radio" name="tipPercent" value="<?php echo $i; ?>" <?php echo ($i==10)?'checked':''?> > <?php echo $i; ?>% 
         <?php
-            #echo "The number is: $i<br>";
         }
         ?>
         <br><br>
         <input type="submit" value="Submit">
         <br><br>
+        <?php
+        $selectedRadio = $_POST['tipPercent'];
+        if($selectedRadio == "10") {
+            #$tip = $_POST['subtotal'] * 
+            # how to do math on POST
+        }
+        if($selectedRadio == "15") {
+
+        }
+        if($selectedRadio == "20") {
+
+        }
+        ?>
     </form>
 </body>
 </html>
