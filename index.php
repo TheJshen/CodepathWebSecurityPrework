@@ -67,6 +67,7 @@
         <input type="text" name="subtotal" value=
          <?php echo isset($_POST['subtotal']) ? htmlspecialchars($_POST['subtotal']) : "0.00";?>
             >
+        <br>
         <span class="error"> <?php echo $subtotalError;?> </span>
         <br><br>
         <h2>Tip Percentage:</h2>
