@@ -35,10 +35,13 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app.
+Due to my lack of experience with HTML, CSS, and PHP, I had to consult the documentation and read
+tutorials on those technologies. Once I was able to get the basics down the project wasn't all
+too difficult. 
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2017] [Jason Shen]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
